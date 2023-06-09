@@ -10,15 +10,23 @@ namespace ASCII
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Let's create some ASCII art !");
+            Console.WriteLine("Let's create some ASCII art!");
             Console.WriteLine();
+
+            Console.WriteLine("Enter a rectangle width");
+            string rectanguleWidth=Console.ReadLine();
+
+            Console.WriteLine("Enter a rectangle height");
+            string rectanguleHeight = Console.ReadLine();
+            Console.WriteLine();
+
+
+            int width = Convert.ToInt32(rectanguleWidth);
+            int height = Convert.ToInt32(rectanguleHeight);
 
             Console.WriteLine("Solid Rectangle");
 
-            int width = 40;
-            int height = 15;
-
-            for(int j=0; j<height;  j++)
+            for (int j=0; j<height;  j++)
             {
                 for (int i = 0; i < width; i++)
                 {
